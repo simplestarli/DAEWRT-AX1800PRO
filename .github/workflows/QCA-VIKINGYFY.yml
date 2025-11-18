@@ -1,5 +1,5 @@
 #CI项目
-name: QCA
+name: QCA-VIKINGYFY
 
 #CI计划
 on:
@@ -34,13 +34,13 @@ jobs:
       matrix:
         #CONFIG: [IPQ807X-NOWIFI, IPQ807X-WIFI,IPQ60XX-NOWIFI, IPQ60XX-WIFI]
         CONFIG: [IPQ60XX-WIFI]
-#LiBwrt        
-        SOURCE: [LiBwrt/openwrt-6.x]
-        BRANCH: [k6.12-nss]
+# #LiBwrt        
+#         SOURCE: [LiBwrt/openwrt-6.x]
+#         BRANCH: [k6.12-nss]
 
-#immortalwrt
-        #SOURCE: [VIKINGYFY/immortalwrt]
-        #BRANCH: [main]
+# immortalwrt
+        SOURCE: [VIKINGYFY/immortalwrt]
+        BRANCH: [main]
 
       matrix:
 #       CONFIG: [IPQ807X-NOWIFI, IPQ807X-WIFI,IPQ60XX-NOWIFI, IPQ60XX-WIFI]
