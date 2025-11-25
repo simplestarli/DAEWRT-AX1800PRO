@@ -64,10 +64,10 @@ UPDATE_PACKAGE() {
 # UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
 # UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-app-wolplus"
 # UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
-# UPDATE_PACKAGE "luci-app-daed" "QiuSimons/luci-app-daed" "master"
+UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
+UPDATE_PACKAGE "luci-app-daed" "QiuSimons/luci-app-daed" "master"
 UPDATE_PACKAGE "luci-app-dae" "QiuSimons/luci-app-dae" "next"
 UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
-UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 
 #更新软件包版本
 UPDATE_VERSION() {
@@ -124,8 +124,8 @@ UPDATE_VERSION() {
 # # rm -rf ../feeds/packages/net/{v2ray-geodata,dae*}
 
 # #更新golang为最新版
- rm -rf ../feeds/packages/lang/golang
- git clone -b 24.x https://github.com/sbwml/packages_lang_golang ../feeds/packages/lang/golang
+# rm -rf ../feeds/packages/lang/golang
+# git clone -b 24.x https://github.com/sbwml/packages_lang_golang ../feeds/packages/lang/golang
 
 
 # cp -r $GITHUB_WORKSPACE/package/* ./
