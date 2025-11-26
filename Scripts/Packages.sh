@@ -68,6 +68,8 @@ UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-daed" "QiuSimons/luci-app-daed" "master"
 UPDATE_PACKAGE "luci-app-dae" "QiuSimons/luci-app-dae" "next"
 UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
+UPDATE_PACKAGE "luci-app-easytier" "EasyTier/luci-app-easytier/tree/main/luci-app-easytier" "main"
+UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier/tree/main/easytier" "main"
 
 #更新软件包版本
 UPDATE_VERSION() {
@@ -121,7 +123,8 @@ UPDATE_VERSION() {
 
 # #删除官方的默认插件
 rm -rf ../feeds/luci/applications/luci-app-{passwall*,mosdns,dockerman,dae*,bypass*}
-rm -rf ../feeds/packages/net/{v2ray-geodata,dae*}
+rm -rf ../feeds/packages/net/{dae*}
+#rm -rf ../feeds/packages/net/{v2ray-geodata,dae*}
 
 # #更新golang为最新版
 rm -rf ../feeds/packages/lang/golang
